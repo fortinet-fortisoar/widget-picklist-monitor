@@ -1,9 +1,9 @@
 (function () {
     angular
         .module('cybersponse')
-        .controller('customPicklistMessageDev110Ctrl', customPicklistMessageDev110Ctrl);
-        customPicklistMessageDev110Ctrl.$inject = ['$scope', '$state', '$interval', 'Modules', 'config', 'websocketService', '$rootScope', '_'];
-    function customPicklistMessageDev110Ctrl($scope, $state, $interval, Modules, config, websocketService, $rootScope, _ ) {
+        .controller('customPicklistMessage110Ctrl', customPicklistMessage110Ctrl);
+        customPicklistMessage110Ctrl.$inject = ['$scope', '$state', '$interval', 'Modules', 'config', 'websocketService', '$rootScope', '_'];
+    function customPicklistMessage110Ctrl($scope, $state, $interval, Modules, config, websocketService, $rootScope, _ ) {
         $scope.config = config;
         $scope.title = '';
         $scope.timeinterval = 0;

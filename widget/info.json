@@ -1,7 +1,7 @@
 {
-    "name": "customPicklistMessageDev",
+    "name": "customPicklistMessage",
     "version": "1.1.0",
-    "title": "Custom Picklist Message (Dev)",
+    "title": "Custom Picklist Message",
     "subTitle": null,
     "metadata": {
         "pages": [
@@ -10,13 +10,12 @@
         "certified": "No",
         "publisher": "Fortinet",
         "snapshots": [
-            "https:\/\/update.cybersponse.com\/fsr-widgets\/customPicklistMessage-1.1.0\/images\/custom-picklist-message-settings.png",
-            "https:\/\/update.cybersponse.com\/fsr-widgets\/customPicklistMessage-1.1.0\/images\/custom-picklist-message-view.png"
+            "https://repo.fortisoar.fortinet.com/fsr-widgets/customPicklistMessage-1.1.0/images/custom-picklist-message-settings.png",
+            "https://repo.fortisoar.fortinet.com/fsr-widgets/customPicklistMessage-1.1.0/images/custom-picklist-message-view.png"
         ],
         "description": " > Custom Picklist Message\n\n <p>Allows to display custom messages on top of the record details page, based on different state values of a particular picklist. It is often helpful to highlight the state of the record or provide additional upfront context to the user.<\/p>",
         "compatibility": [
             "7.2.0"
         ]
-    },
-    "development": true
+    }
 }

@@ -2,11 +2,11 @@
 (function () {
     angular
         .module('cybersponse')
-        .controller('editCustomPicklistMessageDev110Ctrl', editCustomPicklistMessageDev110Ctrl);
+        .controller('editCustomPicklistMessage110Ctrl', editCustomPicklistMessage110Ctrl);
 
-        editCustomPicklistMessageDev110Ctrl.$inject = ['$scope', '$uibModalInstance', '$state', 'config', 'Entity', 'picklistsService', '_'];
+        editCustomPicklistMessage110Ctrl.$inject = ['$scope', '$uibModalInstance', '$state', 'config', 'Entity', 'picklistsService', '_'];
 
-    function editCustomPicklistMessageDev110Ctrl($scope, $uibModalInstance, $state, config, Entity, picklistsService, _) {
+    function editCustomPicklistMessage110Ctrl($scope, $uibModalInstance, $state, config, Entity, picklistsService, _) {
         $scope.addOptions = addOptions;
         $scope.removeOptions = removeOptions;
         $scope.cancel = cancel;
