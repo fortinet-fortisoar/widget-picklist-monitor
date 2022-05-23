@@ -42,7 +42,13 @@
       $scope.loadlistitem = function (picklistItem) {
         if($scope.config.picklits_mapping.options.length === 0){
           $scope.config.picklits_mapping.options.push({showSpinner:true});
-        } 
+        } else{
+          _.map($scope.config.picklits_mapping.options, function(item){
+            if(!_.has(item, 'showSpinner')){
+              return item.showSpinner = true;
+            }
+            });
+        }
         if(picklistItem && angular.isString(picklistItem)){
           picklistItem = _.find($scope.fieldsArray, function(item){
             return item.name === picklistItem;
