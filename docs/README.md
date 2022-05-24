@@ -12,7 +12,7 @@ An example of using the custom picklist message widget would be displaying a cus
 
 **Publisher**: Fortinet  
 
-**Compatibility**: 7.2.0 and higher  
+**Compatibility**: 7.2.0 and later  
 
 **Applicable**: View Panel
 
