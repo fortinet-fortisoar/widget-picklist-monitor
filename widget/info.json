@@ -8,7 +8,7 @@
         "pages": [
             "View Panel"
         ],
-        "certified": "No",
+        "certified": "Yes",
         "publisher": "Fortinet",
         "snapshots": [
             "https://repo.fortisoar.fortinet.com/fsr-widgets/customPicklistMessage-1.1.0/images/custom-picklist-message-settings.png",

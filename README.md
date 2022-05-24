@@ -8,7 +8,7 @@ An example of using the custom picklist message widget would be displaying a cus
 
 **Version**: 1.1.0
 
-**Certified**: No
+**Certified**: Yes
 
 **Publisher**: Fortinet  
 
