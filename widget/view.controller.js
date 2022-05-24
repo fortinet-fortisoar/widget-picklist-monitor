@@ -21,7 +21,7 @@
                     if (foundPickListValue) {
                         $scope.title = foundPickListValue.picklistLoadingTitle;
                         $scope.picklistMessageIcon = foundPickListValue.picklistMessageIcon;
-                        $scope.showSpinner = foundPickListValue.showSpinner;
+                        $scope.showSpinner = _.has(foundPickListValue, 'showSpinner')  ? foundPickListValue.showSpinner : true;
                         $scope.loading = true;
                     } else  {
                         $scope.title = "";
