@@ -22,11 +22,13 @@
                         $scope.title = foundPickListValue.picklistLoadingTitle;
                         $scope.picklistMessageIcon = foundPickListValue.picklistMessageIcon;
                         $scope.showSpinner = _.has(foundPickListValue, 'showSpinner')  ? foundPickListValue.showSpinner : true;
+                        $scope.showIcon = foundPickListValue.showIcon
                         $scope.loading = true;
                     } else  {
                         $scope.title = "";
                         $scope.picklistMessageIcon = "";
                         $scope.showSpinner = false;
+                        $scope.showIcon = false;
                         $scope.loading = false;
                     }
                 });
