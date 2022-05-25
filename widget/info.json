@@ -2,7 +2,7 @@
     "name": "customPicklistMessage",
     "version": "1.1.0",
     "title": "Custom Picklist Message",
-    "subTitle": null,
+    "subTitle": "Allows to display custom messages on top of the record details page",
     "published_date":"1653042894",
     "metadata": {
         "pages": [
