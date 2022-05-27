@@ -59,24 +59,24 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-4">
                   <div class="checkbox">
-        			<label for="showIcon">
-          				<input id="showSpinner" type="checkbox" name="showSpinner" data-ng-model="mapping.showSpinner"><span class="display-inline-block margin-top-2">Show Spinner</span></label>
+        			<label for="showSpinner_{{$index}}">
+          				<input id="showSpinner_{{$index}}" type="checkbox" name="showSpinner" data-ng-model="mapping.showSpinner"><span class="display-inline-block margin-top-2">Show Spinner</span></label>
         			<span data-uib-tooltip="Show spinner next to title"
           data-tooltip-append-to-body="true"><i class="margin-left-sm icon icon-information font-Size-13">
           </i></span>
       			</div>
                 </div>
                 <div class="col-md-5">
-                  <div class="checkbox">
-        			<label for="showIcon">
-          				<input id="showIcon" type="checkbox" name="showIcon" data-ng-model="mapping.showIcon"/><span class="display-inline-block margin-top-2">Show Icon</span></label>
-        			<span data-uib-tooltip="Select an icon to show next to title."
-          data-tooltip-append-to-body="true"><i class="margin-left-sm icon icon-information font-Size-13">
-          </i></span>
-      			</div>
-                <div dataa-ng-if="mapping.showIcon" cs-icons data-ng-model="mapping.picklistMessageIcon" style="width: 50px; display: inline-block;"></div>
+                    <div class="checkbox">
+                        <label for="showIcon_{{$index}}">
+                            <input id="showIcon_{{$index}}" type="checkbox" name="showIcon" data-ng-model="mapping.showIcon"/><span class="display-inline-block margin-top-2">Show Icon</span></label>
+                        <span data-uib-tooltip="Select an icon to show next to title."
+            data-tooltip-append-to-body="true"><i class="margin-left-sm icon icon-information font-Size-13">
+            </i></span>
+                    </div>
+                    <div data-ng-if="mapping.showIcon" cs-icons data-ng-model="mapping.picklistMessageIcon" style="width: 50px; display: inline-block;"></div>
                 </div>
               </div>
             </div>
