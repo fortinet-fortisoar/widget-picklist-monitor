@@ -27,11 +27,11 @@ Following enhancements have been made to the custom picklist message widget in v
 
 **Custom Picklist Message Edit View**:
 
-<img src="./docs/media/custom-picklist-msg-edit-view.png" alt="Editing the Custom Picklist Message Widget" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
+<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.0/docs/media/custom-picklist-msg-edit-view.png" alt="Editing the Custom Picklist Message Widget" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
 
 **Custom Picklist Message - Alert Detail view**:
 
-<img src="./docs/media/detail-view-custom_msg.png" alt="Displaying a custom message on an alerts detail" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
+<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.0/docs/media/detail-view-custom_msg.png" alt="Displaying a custom message on an alerts detail" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
 
 ## Custom Picklist Message Settings
 
