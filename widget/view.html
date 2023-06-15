@@ -1,0 +1,17 @@
+<link rel="stylesheet" type="text/css" href="customPicklistMessage-1.1.0/widgetAssets/css/customPicklistMessage.css" />
+<div class="picklist-monitor-content margin-top-md {{currentTheme}}" data-ng-if="loading">
+	<div class="row">
+		<div class="col-md-12 padding-left-0 padding-right-0 active-color picklist-widget-top-border">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 text-center picklist-message-container">
+			<div class="position-relative picklist-monitor-top-container padding-bottom-xlg padding-top-xlg">
+				<cs-spinner class="display-inline-block" data-ng-if="showSpinner && loading">
+				</cs-spinner>
+              <div class="display-inline-block vertical-align-middle padding-left-md picklist-title-with-icon"> <span data-ng-if="showIcon && picklistMessageIcon !==''" class="picklist-status-icon {{picklistMessageIcon}} margin-right-md"></span> <span class="picklist-title">{{title}}</span></div>
+			</div>
+
+		</div>
+	</div>
+</div>
