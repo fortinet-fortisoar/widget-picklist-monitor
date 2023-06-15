@@ -1,0 +1,91 @@
+<form data-ng-submit="save()" name="editPicklistMonitorForm" novalidate>
+    <div class="modal-header">
+        <h3 class="modal-title col-md-9">Edit Custom Picklist Message</h3>
+        <button type="button" class="close" data-ng-click="cancel()" data-dismiss="modal" aria-label="Close"
+            id="close-edit-progress-monitor-btn">
+            <div aria-hidden="true" class="version-button">+</div>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group picklist-monitor-widget" name="userForm">
+            <div class="row margin-bottom-sm">
+                <div class="col-md-3 padding-right-0 margin-top-sm">
+                    <label for="resourcefields" class="control-label margin-top-sm">Choose Picklist<span
+                            class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-4 padding-right-0">
+                    <div class="form-group margin-bottom-0">
+                        <select name="resourcefields" id="resourcefields" class="form-control"
+                            data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'picklist'} "
+                            data-ng-model="config.picklistItem" data-ng-change="loadlistitem(config.picklistItem); config.picklits_mapping.options = [{}];" required>
+                            <option value="">Select an Option </option>
+                        </select>
+                    </div>
+                    <div data-cs-messages="editPicklistMonitorForm.resourcefields"></div>
+                </div>
+            </div>
+            <div class="mertics-widget-border padding-top-md margin-bottom-md"></div>
+            <div class="row" data-ng-if="config.picklits_mapping.options.length > 0">
+             <div class="col-md-4">
+              	<label class="control-label margin-top-sm text-align-center">is set
+        to<span class="text-danger">*</span></label>
+              </div>
+              <div class="col-md-8">
+                    <label for="title_{{$index}}" class="control-label margin-top-sm">set title to<span
+                            class="text-danger">*</span></label>
+                </div>
+            </div>
+            <div class="margin-bottom-md" data-ng-repeat = "mapping in config.picklits_mapping.options">
+              <div class="row">
+              <div class="col-md-4">
+                <div class="form-group margin-bottom-0">
+                    <select name="picklistValue_{{$index}}" id="picklistValue_{{$index}}"
+                    class="form-control"
+                    data-ng-options="item.itemValue as item.itemValue for item in listItems | filter: filterPicklistValues"
+                    data-ng-model="mapping.picklistValue" required>
+                    <option value="">Select an Option </option>
+                    </select>
+                </div>
+                 <div data-cs-messages="editPicklistMonitorForm['picklistValue_'+$index]"></div>
+              </div>
+              <div class="col-md-8 padding-right-0 margin-top-sm">
+                  <div class="padding-left-0 padding-right-20">
+                    <input id="title_{{$index}}" name="title_{{$index}}" type="text" class="form-control pull-left width-80" data-ng-model="mapping.picklistLoadingTitle" required>
+                    <button type="button" class="btn btn-sm btn-default pull-left margin-left-sm margin-top-2" data-ng-click="removeOptions($index)" data-ng-if="config.picklits_mapping.options.length > 1"><span class="fa fa-trash-o text-danger"></span></button>
+                    <button type="button" class="btn btn-sm btn-default rule-delete-button margin-left-sm pull-left margin-top-2 margin-left-sm" data-ng-click="addOptions()" data-ng-if="$last"><span class="fa fa-plus active-color"></span></button>
+                    <div class="clear-both"></div>
+                </div>
+                <div data-cs-messages="editPicklistMonitorForm['title_'+$index]"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="checkbox">
+        			<label for="showSpinner_{{$index}}">
+          				<input id="showSpinner_{{$index}}" type="checkbox" name="showSpinner" data-ng-model="mapping.showSpinner"><span class="display-inline-block margin-top-2">Show Spinner</span></label>
+        			<span data-uib-tooltip="Show spinner next to title"
+          data-tooltip-append-to-body="true"><i class="margin-left-sm icon icon-information font-Size-13">
+          </i></span>
+      			</div>
+                </div>
+                <div class="col-md-5">
+                    <div class="checkbox">
+                        <label for="showIcon_{{$index}}">
+                            <input id="showIcon_{{$index}}" type="checkbox" name="showIcon" data-ng-model="mapping.showIcon"/><span class="display-inline-block margin-top-2">Show Icon</span></label>
+                        <span data-uib-tooltip="Select an icon to show next to title."
+            data-tooltip-append-to-body="true"><i class="margin-left-sm icon icon-information font-Size-13">
+            </i></span>
+                    </div>
+                    <div data-ng-if="mapping.showIcon" cs-icons data-ng-model="mapping.picklistMessageIcon" style="width: 50px; display: inline-block;"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button id="widget-picklistMonitor-edit-save" type="submit" class="btn btn-sm btn-primary"><i
+                class="icon icon-check margin-right-sm" data-ng-disabled=""></i>Save</button>
+        <button id="widget-picklistMonitor-edit-cancel" type="button" class="btn btn-sm btn-default" data-ng-click="cancel()"><i
+                class="icon icon-close margin-right-sm"></i>Close</button>
+    </div>
+</form>
