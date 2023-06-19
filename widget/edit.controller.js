@@ -32,9 +32,9 @@
         entity.loadFields().then(function () {
           $scope.fieldsArray = entity.getFormFieldsArray();
           $scope.fieldsArray = _.filter($scope.fieldsArray, function(item){ return item.model === 'picklists'; });
-          if(config.picklistItem){
+          if($scope.config.picklistItem){
             var selectedPicklistItem = _.find($scope.fieldsArray, function(item){
-            return item.name === config.picklistItem;
+            return item.name === $scope.config.picklistItem;
             });
             $scope.loadlistitem(selectedPicklistItem);
           }
@@ -78,9 +78,9 @@
         entity.loadFields().then(function () {
           $scope.newfieldsArray = entity.getFormFieldsArray();
           $scope.newfieldsArray = _.filter($scope.newfieldsArray, function(item){ return item.model === 'picklists'; });
-          if(config.newpicklistItem){
+          if($scope.config.newpicklistItem){
             var selectedPicklistItem = _.find($scope.newfieldsArray, function(item){
-            return item.name === config.newpicklistItem;
+            return item.name === $scope.config.newpicklistItem;
             });
             $scope.updatelistitem(selectedPicklistItem);
           }

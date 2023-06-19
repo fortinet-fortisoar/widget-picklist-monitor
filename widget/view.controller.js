@@ -15,10 +15,10 @@
           Modules.get({
              module: $state.params.module,
              id: $state.params.id,
-             __selectFields: config.picklistItem
+             __selectFields: $scope.config.picklistItem
           }).$promise.then(function (result) {
              var foundPickListValue = _.find($scope.config.picklits_mapping.options, function (item) {
-                return item.picklistValue === result[config.picklistItem].itemValue;
+                return item.picklistValue === result[$scope.config.picklistItem].itemValue;
              });
              if (foundPickListValue) {
                 $scope.flag = true
@@ -27,14 +27,14 @@
                 $scope.showSpinner = _.has(foundPickListValue, 'showSpinner') ? foundPickListValue.showSpinner : true;
                 $scope.showIcon = foundPickListValue.showIcon
                 $scope.loading = true;
-                if (config.time) {
+                if ($scope.config.time) {
                     $timeout(function () {
                        $scope.flag = false
-                       $scope.title = config.newtitle;
-                       if (config.newpicklistItem && config.newpicklistValue) {
+                       $scope.title = $scope.config.newtitle;
+                       if ($scope.config.newpicklistItem && $scope.config.newpicklistValue) {
                          updatePicklist();
                        }
-                    }, config.time*60000);
+                    }, $scope.config.time*60000);
                  }
              } else {
                 $scope.title = "";
@@ -48,7 +48,7 @@
  
         function updatePicklist() {
           var picklistObject = {};
-          picklistObject[config.newpicklistItem] = $scope.selectedPicklistObject
+          picklistObject[$scope.config.newpicklistItem] = $scope.selectedPicklistObject
           Modules.update({
              module: $state.params.module,
              id: $state.params.id,
@@ -71,14 +71,14 @@
         entity.loadFields().then(function () {
           $scope.fieldsArray = entity.getFormFieldsArray();
           $scope.fieldsArray = _.filter($scope.fieldsArray, function(item){ return item.model === 'picklists'; });
-          if(config.newpicklistItem){
+          if($scope.config.newpicklistItem){
             var selectedPicklistItem = _.find($scope.fieldsArray, function(item){
-            return item.name === config.newpicklistItem;
+            return item.name === $scope.config.newpicklistItem;
             });
             $scope.selectedPicklistItem = selectedPicklistItem;
-            if(config.newpicklistValue){
+            if($scope.config.newpicklistValue){
                 selectedPicklistItemValue = _.find($scope.selectedPicklistItem.options, function(item){
-                    return item.itemValue === config.newpicklistValue;
+                    return item.itemValue === $scope.config.newpicklistValue;
                     });
                 $scope.selectedPicklistObject = selectedPicklistItemValue   
             }            
@@ -105,8 +105,8 @@
              var changedAttribute;
              widgetsubscription = result;
              if (angular.isDefined(result.changeData)) {
-                if (result.changeData.includes(config.picklistItem)) {
-                   changedAttribute = config.picklistItem;
+                if (result.changeData.includes($scope.config.picklistItem)) {
+                   changedAttribute = $scope.config.picklistItem;
                 }
              }
              if (changedAttribute) {
