@@ -1,4 +1,4 @@
 ## What's New
 
-- Added an option of displaying a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget.
-- Added an option of displaying an icon associated with the custom message on the detail view of the record. 
+- Added an option to add timer to change the custom message.
+- Added an option to change the picklist value after the specified time is elapsed.  
