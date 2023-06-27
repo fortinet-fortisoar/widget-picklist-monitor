@@ -6,7 +6,7 @@ An example of using the custom picklist message widget would be displaying a cus
 
 ## Version Information
 
-**Version**: 1.1.0
+**Version**: 1.1.1
 
 **Certified**: Yes
 
@@ -18,20 +18,19 @@ An example of using the custom picklist message widget would be displaying a cus
 
 ## Release Notes
 
-Following enhancements have been made to the custom picklist message widget in version 1.1.0:
+Following enhancements have been made to the custom picklist message widget in version 1.1.1:
 
-- Added an option of displaying a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget.
-- Added an option of displaying an icon associated with the custom message on the detail view of the record. 
+- Handled unnecessary api calls made by the widget.
 
 ## Custom Picklist Message Views
 
 **Custom Picklist Message Edit View**:
 
-<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.0/docs/media/custom-picklist-msg-edit-view.png" alt="Editing the Custom Picklist Message Widget" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
+<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.1/docs/media/custom-picklist-msg-edit-view.png" alt="Editing the Custom Picklist Message Widget" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
 
 **Custom Picklist Message - Alert Detail view**:
 
-<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.0/docs/media/detail-view-custom_msg.png" alt="Displaying a custom message on an alerts detail" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
+<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.1/docs/media/detail-view-custom_msg.png" alt="Displaying a custom message on an alerts detail" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
 
 ## Custom Picklist Message Settings
 

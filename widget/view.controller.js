@@ -1,9 +1,9 @@
 (function () {
     angular
         .module('cybersponse')
-        .controller('customPicklistMessage110Ctrl', customPicklistMessage110Ctrl);
-        customPicklistMessage110Ctrl.$inject = ['$scope', '$state', '$interval', 'Modules', 'config', 'websocketService', '$rootScope', '_'];
-    function customPicklistMessage110Ctrl($scope, $state, $interval, Modules, config, websocketService, $rootScope, _ ) {
+        .controller('customPicklistMessage111Ctrl', customPicklistMessage111Ctrl);
+        customPicklistMessage111Ctrl.$inject = ['$scope', '$state', '$interval', 'Modules', 'config', 'websocketService', '$rootScope', '_'];
+    function customPicklistMessage111Ctrl($scope, $state, $interval, Modules, config, websocketService, $rootScope, _ ) {
         $scope.config = config;
         $scope.title = '';
         $scope.timeinterval = 0;
@@ -51,7 +51,7 @@
             if (widgetsubscription) {
                 websocketService.unsubscribe(widgetsubscription);
             }
-            websocketService.subscribe($state.params.module, function (result) {
+            websocketService.subscribe($state.params.module+'/'+$state.params.id, function (result) {
                 var changedAttribute;
                 widgetsubscription = result;
                 if (angular.isDefined(result.changeData)) {
