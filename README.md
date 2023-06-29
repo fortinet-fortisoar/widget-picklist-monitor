@@ -20,7 +20,7 @@ An example of using the custom picklist message widget would be displaying a cus
 
 Following enhancements have been made to the custom picklist message widget in version 1.1.1:
 
-- Handled unnecessary api calls made by the widget.
+- Optimized the API calls this widget triggered resulting in improved performance.
 
 ## Custom Picklist Message Views
 

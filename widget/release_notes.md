@@ -1,3 +1,3 @@
 ## What's Fixed
 
-- Handled unnecessary api calls made by the widget.
+- Optimized the API calls this widget triggered resulting in improved performance.
