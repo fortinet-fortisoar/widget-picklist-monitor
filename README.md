@@ -6,7 +6,7 @@ An example of using the custom picklist message widget would be displaying a cus
 
 ## Version Information
 
-**Version**: 1.1.0
+**Version**: 2.0.0
 
 **Certified**: Yes
 
@@ -18,10 +18,10 @@ An example of using the custom picklist message widget would be displaying a cus
 
 ## Release Notes
 
-Following enhancements have been made to the custom picklist message widget in version 1.1.0:
+Following enhancements have been made to the custom picklist message widget in version 2.0.0:
 
-- Added an option of displaying a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget.
-- Added an option of displaying an icon associated with the custom message on the detail view of the record. 
+- Added an option to add timer to change the custom message.
+- Added an option to change the picklist value after the specified time is elapsed.   
 
 ## Custom Picklist Message Views
 
@@ -37,11 +37,16 @@ Following enhancements have been made to the custom picklist message widget in v
 
 Provide the following details to customize the Custom Picklist Message widget to suit your requirements:
 
-| Fields          | Description                              |
-| --------------- | ---------------------------------------- |
-| Choose Picklist | Select the picklist based on the values of whose options the custom message gets displayed at the top of the records' detail. |
-| Is Set to       | Select the option of the picklist, which when set triggers the custom message to get displayed at the top of the records' detail. |
-| Set Title To    | Specify the custom message to be displayed when the picklist is set to the option that users have selected. |
-| Show Spinner    | Select the **Show Spinner** option if you want to display a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget. |
-| Show Icon       | Select the **Show Icon** option if you want to display an icon associated with the custom message on the detail view of the record. Once you select the **Show Icon** option, then from the icons drop-down list, you can choose the icon to be displayed with the custom message. |
+| Fields                             | Description                                                                                                                                                                                                                                                                        |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Choose Picklist                    | Select the picklist based on the values of whose options the custom message gets displayed at the top of the records' detail.                                                                                                                                                      |
+| Is Set to                          | Select the option of the picklist, which when set triggers the custom message to get displayed at the top of the records' detail.                                                                                                                                                  |
+| Set Title To                       | Specify the custom message to be displayed when the picklist is set to the option that users have selected.                                                                                                                                                                        |
+| Show Spinner                       | Select the **Show Spinner** option if you want to display a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget.                                                                                                    |
+| Show Icon                          | Select the **Show Icon** option if you want to display an icon associated with the custom message on the detail view of the record. Once you select the **Show Icon** option, then from the icons drop-down list, you can choose the icon to be displayed with the custom message. |
+| Do you want to configure a timeout | Specify whether you want to configure a timeout or not.                                                                                                                                                                                                                            |
+| Specify The Time In Minutes        | Specify the time in minutes.                                                                                                                                                                                                                                                       |
+| Set Title To                       | Specify the title to be displayed once the time is elapsed.                                                                                                                                                                                                                        |
+| Choose Picklist                    | Select the picklist whose value you want to update.                                                                                                                                                                                                                                |
+| Set Picklist To                    | Specify the value of the picklist selected.                                                                                                                                                                                                                                        |
 

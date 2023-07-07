@@ -6,12 +6,14 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 text-center picklist-message-container">
-			<div class="position-relative picklist-monitor-top-container padding-bottom-xlg padding-top-xlg">
+			<div class="position-relative picklist-monitor-top-container padding-bottom-xlg padding-top-xlg" data-ng-if="flag">
 				<cs-spinner class="display-inline-block" data-ng-if="showSpinner && loading">
 				</cs-spinner>
               <div class="display-inline-block vertical-align-middle padding-left-md picklist-title-with-icon"> <span data-ng-if="showIcon && picklistMessageIcon !==''" class="picklist-status-icon {{picklistMessageIcon}} margin-right-md"></span> <span class="picklist-title">{{title}}</span></div>
 			</div>
-
+			<div class="position-relative picklist-monitor-top-container padding-bottom-xlg padding-top-xlg" data-ng-if="!flag">
+              <div class="display-inline-block vertical-align-middle padding-left-md picklist-title-with-icon"><span class="picklist-title">{{title}}</span></div>
+			</div>
 		</div>
 	</div>
 </div>
