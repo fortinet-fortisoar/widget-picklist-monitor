@@ -1,4 +1,5 @@
-## What's New
+## Release Notes
 
-- Added an option of displaying a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget.
-- Added an option of displaying an icon associated with the custom message on the detail view of the record. 
+Following enhancements have been made to the custom picklist message widget in version `v1.1.1`:
+
+- Optimized the API calls this widget triggered resulting in improved performance

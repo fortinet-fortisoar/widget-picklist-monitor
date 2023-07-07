@@ -1,47 +1,27 @@
-# Custom Picklist Message
-
-Displays custom messages at the top of the detail page of records, based on the values assigned to the different states of a particular picklist. You can use this widget to highlight the state of the record and provide additional contextual information upfront to users.
-
-An example of using the custom picklist message widget would be displaying a custom message such as `Please wait while Indicators are being extracted` when a new alert is added, i.e., the **State** of an alert record is set to **New**.
-
 ## Version Information
 
-**Version**: 1.1.0
+- **Version**: 1.1.1
+- **Certified**: Yes
+- **Publisher**: Fortinet  
+- **Compatible Version**: 7.2.0 and later  
+- **Applicable**: View Panel
+- [Release Notes](./widget/release_notes.md)
 
-**Certified**: Yes
+# Overview
 
-**Publisher**: Fortinet  
+The **Custom Picklist Message** widget is a cutting-edge tool designed to transform the way users interact with a record's detail page. It offers dynamic and personalized messages that appear prominently at the top of the page, instantly capturing the user's attention and providing crucial contextual information based on the specific state of a designated picklist. With this powerful widget, you can efficiently highlight the status and key attributes of a record, ensuring users grasp vital information at a glance.
 
-**Compatibility**: 7.2.0 and later  
+## Key Features
 
-**Applicable**: View Panel
+1. **Engage Users at First Glance**: Empower your users with essential information upfront! The widget's eye-catching messages create an instant impact, increasing user engagement.
 
-## Release Notes
+2. **Customization at Your Fingertips**: Tailor the widget to suit your organization's unique needs. Customize messages for each state of the picklist, ensuring clarity and relevancy for different scenarios.
 
-Following enhancements have been made to the custom picklist message widget in version 1.1.0:
+3. **Streamline Decision-Making**: With clear, concise messages, users can make faster and well-informed decisions, optimizing productivity across your teams.
 
-- Added an option of displaying a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget.
-- Added an option of displaying an icon associated with the custom message on the detail view of the record. 
+4. **Enhance User Experience**: Simplify complex data and boost user satisfaction by presenting critical details in an easily readable format.
 
-## Custom Picklist Message Views
+5. **Effortless Integration**: Implementing the **Custom Picklist Message** widget is a breeze! Seamlessly incorporate it into your existing record's detail page without hassle.
 
-**Custom Picklist Message Edit View**:
-
-<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.0/docs/media/custom-picklist-msg-edit-view.png" alt="Editing the Custom Picklist Message Widget" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
-
-**Custom Picklist Message - Alert Detail view**:
-
-<img src="https://raw.githubusercontent.com/fortinet-fortisoar/widget-custom-picklist-message/release/1.1.0/docs/media/detail-view-custom_msg.png" alt="Displaying a custom message on an alerts detail" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto;">
-
-## Custom Picklist Message Settings
-
-Provide the following details to customize the Custom Picklist Message widget to suit your requirements:
-
-| Fields          | Description                              |
-| --------------- | ---------------------------------------- |
-| Choose Picklist | Select the picklist based on the values of whose options the custom message gets displayed at the top of the records' detail. |
-| Is Set to       | Select the option of the picklist, which when set triggers the custom message to get displayed at the top of the records' detail. |
-| Set Title To    | Specify the custom message to be displayed when the picklist is set to the option that users have selected. |
-| Show Spinner    | Select the **Show Spinner** option if you want to display a spinner on the detail view of the record for the duration of completion of the task mentioned in the custom widget. |
-| Show Icon       | Select the **Show Icon** option if you want to display an icon associated with the custom message on the detail view of the record. Once you select the **Show Icon** option, then from the icons drop-down list, you can choose the icon to be displayed with the custom message. |
-
+| [Installation](./docs/setup.md#installation) | [Configuration](./docs/setup.md#configuration) | [Usage](./docs/usage.md) |
+|----------------------------------------------|------------------------------------------------|--------------------------|
