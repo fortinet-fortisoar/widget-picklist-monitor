@@ -1,9 +1,9 @@
 (function () {
     angular
         .module('cybersponse')
-        .controller('customPicklistMessage111Ctrl', customPicklistMessage111Ctrl);
-        customPicklistMessage111Ctrl.$inject = ['$scope', '$state', '$interval', 'Modules', 'config', 'websocketService', '$rootScope', '_'];
-    function customPicklistMessage111Ctrl($scope, $state, $interval, Modules, config, websocketService, $rootScope, _ ) {
+        .controller('customPicklistMessage112Ctrl', customPicklistMessage112Ctrl);
+        customPicklistMessage112Ctrl.$inject = ['$scope', '$state', '$interval', 'Modules', 'config', 'websocketService', '$rootScope', '_'];
+    function customPicklistMessage112Ctrl($scope, $state, $interval, Modules, config, websocketService, $rootScope, _ ) {
         $scope.config = config;
         $scope.title = '';
         $scope.timeinterval = 0;
@@ -48,12 +48,8 @@
         );
         
         function widgetWSSubscribe() {
-            if (widgetsubscription) {
-                websocketService.unsubscribe(widgetsubscription);
-            }
             websocketService.subscribe($state.params.module+'/'+$state.params.id, function (result) {
                 var changedAttribute;
-                widgetsubscription = result;
                 if (angular.isDefined(result.changeData)) {
                     if (result.changeData.includes(config.picklistItem)) {
                         changedAttribute = config.picklistItem;
@@ -62,8 +58,9 @@
                 if (changedAttribute) {
                    checkPicklistCondition();
                 }
-            }
-            );
+            }).then(function (data){
+					widgetsubscription=data;
+			});
         }
         widgetWSSubscribe();
         checkPicklistCondition();

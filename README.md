@@ -1,9 +1,9 @@
 ## Version Information
 
-- **Version**: 1.1.1
+- **Version**: 1.1.2
 - **Certified**: Yes
-- **Publisher**: Fortinet  
-- **Compatible Version**: 7.2.0 and later  
+- **Publisher**: Fortinet
+- **Compatible Version**: 7.2.0 and later
 - **Applicable**: View Panel
 - [Release Notes](./widget/release_notes.md)
 
