@@ -1,12 +1,17 @@
+/* Copyright start
+  MIT License
+  Copyright (c) 2024 Fortinet Inc
+  Copyright end */
+  
 'use strict';
 (function () {
     angular
         .module('cybersponse')
-        .controller('editCustomPicklistMessage111Ctrl', editCustomPicklistMessage111Ctrl);
+        .controller('editCustomPicklistMessage112Ctrl', editCustomPicklistMessage112Ctrl);
 
-        editCustomPicklistMessage111Ctrl.$inject = ['$scope', '$uibModalInstance', '$state', 'config', 'Entity', 'picklistsService', '_'];
+        editCustomPicklistMessage112Ctrl.$inject = ['$scope', '$uibModalInstance', '$state', 'config', 'Entity', 'picklistsService', '_'];
 
-    function editCustomPicklistMessage111Ctrl($scope, $uibModalInstance, $state, config, Entity, picklistsService, _) {
+    function editCustomPicklistMessage112Ctrl($scope, $uibModalInstance, $state, config, Entity, picklistsService, _) {
         $scope.addOptions = addOptions;
         $scope.removeOptions = removeOptions;
         $scope.cancel = cancel;
