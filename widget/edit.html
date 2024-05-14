@@ -20,7 +20,7 @@
                 <div class="col-md-4 padding-right-0">
                     <div class="form-group margin-bottom-0">
                         <select name="resourcefields" id="resourcefields" class="form-control"
-                            data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'picklist'} "
+                            data-ng-options="field.name as field.title for field in fieldsArray} "
                             data-ng-model="config.picklistItem" data-ng-change="loadlistitem(config.picklistItem); config.picklits_mapping.options = [{}];" required>
                             <option value="">Select an Option </option>
                         </select>
